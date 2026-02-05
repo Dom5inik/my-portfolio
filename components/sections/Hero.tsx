@@ -13,7 +13,7 @@ export function Hero() {
                     </div>
 
                     <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
-                        Ich entwickle performante Webanwendungen.
+                        sagasgasg.
                     </h1>
 
                     <p className="max-w-xl text-lg text-muted-foreground sm:text-xl leading-relaxed">
