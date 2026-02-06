@@ -1,20 +1,23 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google"; // Switch to Inter for that clean look, JetBrains for code
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/sections/Header";
+import { Footer } from "@/components/sections/Footer";
 
 const inter = Inter({
   variable: "--font-sans",
   subsets: ["latin"],
 });
 
+// Used for mono-spaced elements like dates and codes
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-mono",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Max Mustermann | Full-Stack Entwickler",
-  description: "Portfolio eines kreativen Full-Stack Entwicklers. Spezialisiert auf Next.js, TypeScript und modernes UI Design.",
+  title: "dom5inik | Junior Softwareentwickler",
+  description: "Portfolio eines kreativen Junior Softwareentwicklers. Spezialisiert auf Next.js, TypeScript und modernes UI Design.",
   icons: {
     icon: "/favicon.ico",
   },
@@ -28,9 +31,12 @@ export default function RootLayout({
   return (
     <html lang="de" className="scroll-smooth">
       <body
-        className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}
+        // flex-col + min-h-screen ensures the footer stays at the bottom even with little content
+        className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased min-h-screen flex flex-col`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -1,9 +1,9 @@
 export const navigation = [
-    { name: "Projekte", href: "#projekte" },
-    { name: "Skills", href: "#skills" },
-    { name: "Erfahrung", href: "#erfahrung" },
-    { name: "Über mich", href: "#ueber-mich" },
-    { name: "Kontakt", href: "#kontakt" },
+    { name: "Projekte", href: "/#projekte" },
+    { name: "Skills", href: "/#skills" },
+    { name: "Erfahrung", href: "/#erfahrung" },
+    { name: "Außer Coding", href: "/#auesser-coding" },
+    { name: "Kontakt", href: "/#kontakt" },
 ];
 
 export const projects = [
@@ -40,35 +40,60 @@ export const projects = [
 ];
 
 export const skills = {
-    frontend: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    backend: ["Node.js", "PostgreSQL", "Prisma", "Supabase", "Serverless"],
-    devops: ["Docker", "Vercel", "GitHub Actions", "AWS"],
-    tools: ["Figma", "Git", "VS Code", "Postman"],
+    frontend: [
+        { name: "C# WPF", level: "advanced" },
+        { name: "React", level: "intermediate" },
+        { name: "Next.js", level: "intermediate" },
+        { name: "TypeScript", level: "intermediate" },
+        { name: "Tailwind CSS", level: "intermediate" },
+        { name: "C# WinForms", level: "basic" },
+    ],
+    backend: [
+        { name: "Oracle DB", level: "advanced" },
+        { name: "PL/SQL", level: "intermediate" },
+        { name: "ASP.NET MVC", level: "intermediate" },
+        { name: "Node.js", level: "intermediate" },
+    ],
+    devops: [
+        { name: "Docker", level: "basic" },
+        { name: "Vercel", level: "basic" },
+    ],
+    tools: [
+        { name: "Git", level: "advanced" },
+        { name: "VS Code", level: "advanced" },
+        { name: "Visual Studio", level: "advanced" },
+        { name: "Postman", level: "basic" },
+    ],
 };
 
 export const experience = [
     {
-        role: "Senior Frontend Developer",
-        company: "Tech Solutions GmbH",
-        period: "2021 – Heute",
+        role: "Ausbildung Fachinformatiker für Anwendungsentwicklung",
+        company: "Woolworth GmbH",
+        period: "2022 – 2025",
         description: [
-            "Leitung der Frontend-Entwicklung für die SaaS-Plattform.",
-            "Optimierung der Performance (Core Web Vitals) um 40%.",
-            "Mentoring von Junior-Entwicklern und Einführung von Best Practices.",
+            "Analyse von Kundenwünschen und Implementierung von Lösungen",
+            "Strukturierung von Daten und Programmen",
+            "Sicherstellung von Wartbarkeit und Konfigurierbarkeit von Programmen",
+            "Erstellung, Durchführung und Auswertung von eigenen Testkonzepten",
+            "Weiterentwicklung der Warenwirtschaft inklusive Datenbank",
+            "Entwicklung von Front- und Backend-Anwendungen",
         ],
     },
     {
-        role: "Full Stack Developer",
-        company: "Creative Agency Berlin",
-        period: "2019 – 2021",
+        role: "Auslandspraktikum (remote)",
+        company: "International Formation Center, Madrid",
+        period: "2022",
         description: [
-            "Entwicklung von maßgeschneiderten Webanwendungen für Kunden.",
-            "Implementierung von CMS-Lösungen mit Headless-Ansatz.",
-            "Zusammenarbeit im agilen Team (Scrum).",
+            "Umsetzung der App mit Kotlin für Android",
+            "Gestaltung des User Interface (UI-Design)",
+            "Implementierung von Navigation zwischen verschiedenen Inhalten",
+            "Strukturierte Darstellung von Lerninhalten",
+            "Praktische Erfahrungen in App-Entwicklung und UX-Optimierung",
         ],
     },
 ];
 
 export const about = {
-    text: "Ich bin ein leidenschaftlicher Full-Stack-Entwickler mit einem Auge für Details. Meine Mission ist es, komplexe Probleme in elegante, benutzerfreundliche Lösungen zu verwandeln. Ich glaube an Clean Code, offene Webstandards und kontinuierliches Lernen.",
+    text: "Ich beschäftige mich gern mit DIY-Projekten und experimentiere mit eigenen Ideen. Außerdem interessiere ich mich für 3D-Modellierung und die kreative Umsetzung digitaler Objekte. In meiner Freizeit zocke ich vor allem gerne competitive Games, in denen ich ganz gut unterwegs bin.",
 };
