@@ -22,7 +22,7 @@ export function Hero() {
 
                         <Reveal delay={0.3}>
                             <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
-                                Dominik.
+                                Dominik
                             </h1>
                         </Reveal>
 

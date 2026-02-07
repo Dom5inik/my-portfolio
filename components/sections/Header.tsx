@@ -40,7 +40,7 @@ export function Header() {
                             }`}
                         onClick={() => setIsOpen(false)}
                     >
-                        Dominik.
+                        dom5inik
                     </a>
 
                     {/* Desktop Nav */}

@@ -45,24 +45,23 @@ export const skills = {
         { name: "React", level: "intermediate" },
         { name: "Next.js", level: "intermediate" },
         { name: "TypeScript", level: "intermediate" },
-        { name: "Tailwind CSS", level: "intermediate" },
-        { name: "C# WinForms", level: "basic" },
+        { name: "Tailwind CSS", level: "intermediate" }
     ],
     backend: [
         { name: "Oracle DB", level: "advanced" },
         { name: "PL/SQL", level: "intermediate" },
         { name: "ASP.NET MVC", level: "intermediate" },
-        { name: "Node.js", level: "intermediate" },
+        { name: "Node.js", level: "intermediate" }
     ],
     devops: [
         { name: "Docker", level: "basic" },
-        { name: "Vercel", level: "basic" },
+        { name: "Vercel", level: "basic" }
     ],
     tools: [
         { name: "Git", level: "advanced" },
         { name: "VS Code", level: "advanced" },
         { name: "Visual Studio", level: "advanced" },
-        { name: "Postman", level: "basic" },
+        { name: "Postman", level: "basic" }
     ],
 };
 
@@ -81,7 +80,7 @@ export const experience = [
         ],
     },
     {
-        role: "Auslandspraktikum (remote)",
+        role: "Auslandspraktikum",
         company: "International Formation Center, Madrid",
         period: "2022",
         description: [

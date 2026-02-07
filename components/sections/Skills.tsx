@@ -70,17 +70,17 @@ export function Skills() {
                                                     ? "text-foreground font-medium"
                                                     : skill.level === "intermediate"
                                                         ? "text-foreground/90"
-                                                        : "text-muted-foreground/50"
+                                                        : "text-muted-foreground/60"
                                             )}
                                         >
                                             {/* Dot indicator: Advanced (glow), Intermediate (solid), Basic (muted) */}
                                             <span className={cn(
-                                                "w-1.5 h-1.5 rounded-full mr-3 transition-all duration-500",
+                                                "w-2 h-2 rounded-full mr-3 transition-all duration-500",
                                                 skill.level === "advanced"
-                                                    ? "bg-foreground shadow-[0_0_10px_rgba(255,255,255,0.4)]"
+                                                    ? "bg-foreground shadow-[0_0_12px_rgba(255,255,255,0.7)] animate-pulse"
                                                     : skill.level === "intermediate"
                                                         ? "bg-foreground/70"
-                                                        : "bg-zinc-400 dark:bg-zinc-700"
+                                                        : "bg-zinc-400 dark:bg-zinc-700 opacity-40"
                                             )}></span>
                                             {skill.name}
                                         </li>
@@ -90,6 +90,26 @@ export function Skills() {
                         </Reveal>
                     );
                 })}
+            </div>
+
+            {/* Legend Section */}
+            <div className="mt-16 pt-8 border-t border-border/50">
+                <Reveal delay={0.4} width="100%">
+                    <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 text-sm text-muted-foreground">
+                        <div className="flex items-center gap-3">
+                            <span className="w-2.5 h-2.5 rounded-full bg-foreground shadow-[0_0_12px_rgba(255,255,255,0.7)] animate-pulse"></span>
+                            <span>Erfahren (Beste Kenntnisse)</span>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <span className="w-2 h-2 rounded-full bg-foreground/70"></span>
+                            <span>Fortgeschritten (Sicherer Umgang)</span>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <span className="w-2 h-2 rounded-full bg-zinc-400 dark:bg-zinc-700 opacity-40"></span>
+                            <span>Grundlagen (Basiswissen)</span>
+                        </div>
+                    </div>
+                </Reveal>
             </div>
         </Section>
     );
