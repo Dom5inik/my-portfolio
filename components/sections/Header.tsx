@@ -28,10 +28,7 @@ export function Header() {
     return (
         <>
             <header
-                className={`fixed top-0 left-0 right-0 z-[60] transition-all duration-300 ${isScrolled && !isOpen
-                    ? "bg-background/80 backdrop-blur-md border-b border-border py-4"
-                    : "bg-transparent py-6"
-                    }`}
+                className={`fixed top-0 left-0 right-0 z-[60] transition-all duration-300 bg-background/80 backdrop-blur-md border-b border-border py-4`}
             >
                 <Container className="flex items-center justify-between">
                     <a
