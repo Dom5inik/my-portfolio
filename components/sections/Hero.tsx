@@ -13,12 +13,6 @@ export function Hero() {
             <Container>
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div className="max-w-3xl space-y-8">
-                        <Reveal delay={0.2}>
-                            <div className="inline-flex items-center rounded-full border border-border px-3 py-1 text-sm text-muted-foreground">
-                                <span className="flex h-2 w-2 rounded-full bg-green-500 mr-2 animate-pulse"></span>
-                                Verfügbar für neue Projekte
-                            </div>
-                        </Reveal>
 
                         <Reveal delay={0.3}>
                             <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
