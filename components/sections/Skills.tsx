@@ -42,13 +42,13 @@ export function Skills() {
                 </Reveal>
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
                 {Object.entries(skills).map(([category, items], index) => {
                     const Icon = categoryIcons[category] || Code2;
 
                     return (
                         <Reveal key={category} delay={index * 0.1} width="100%" className="h-full">
-                            <div className="h-full px-4 py-8 rounded-xl border border-border bg-card/50 space-y-6">
+                            <div className="h-full p-6 rounded-xl border border-border bg-card/50 space-y-6">
                                 <div className="flex items-center gap-3 border-b border-border pb-3">
                                     <div className="p-2 rounded-lg bg-foreground/5 text-foreground">
                                         <Icon size={18} />
@@ -58,38 +58,31 @@ export function Skills() {
                                     </h3>
                                 </div>
 
-                                {/* Compact grid-based layout for zero overflow */}
-                                <ul className="space-y-4">
+                                {/* Skills list with visual indicators for proficiency levels */}
+                                <ul className="space-y-3">
                                     {items.map((skill) => (
                                         <li
                                             key={skill.name}
-                                            className="grid grid-cols-[1fr_auto] items-center gap-2 group w-full"
-                                        >
-                                            <span className={cn(
-                                                "text-xs transition-colors whitespace-normal leading-tight",
+                                            className={cn(
+                                                "text-sm flex items-center transition-colors",
+                                                // Fade text for basic skills, hold for advanced
                                                 skill.level === "advanced"
                                                     ? "text-foreground font-medium"
                                                     : skill.level === "intermediate"
                                                         ? "text-foreground/90"
-                                                        : "text-muted-foreground/80"
-                                            )}>
-                                                {skill.name}
-                                            </span>
-
+                                                        : "text-muted-foreground/60"
+                                            )}
+                                        >
+                                            {/* Dot indicator: Advanced (glow), Intermediate (solid), Basic (muted) */}
                                             <span className={cn(
-                                                "text-[9px] font-bold px-2 py-1 rounded-full border shadow-sm transition-all flex items-center justify-center w-[95px] shrink-0 whitespace-nowrap",
+                                                "w-2 h-2 rounded-full mr-3 transition-all duration-500",
                                                 skill.level === "advanced"
-                                                    ? "bg-blue-600 text-white border-blue-500 shadow-blue-900/20"
+                                                    ? "bg-foreground shadow-[0_0_12px_rgba(255,255,255,0.7)] animate-pulse"
                                                     : skill.level === "intermediate"
-                                                        ? "bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-700/50 dark:text-foreground/90 dark:border-white/10"
-                                                        : "bg-zinc-100 text-zinc-500 border-zinc-200 dark:bg-zinc-800/50 dark:text-muted-foreground dark:border-white/5"
-                                            )}>
-                                                {skill.level === "advanced"
-                                                    ? "Beste Kenntnisse"
-                                                    : skill.level === "intermediate"
-                                                        ? "Sicherer Umgang"
-                                                        : "Basiswissen"}
-                                            </span>
+                                                        ? "bg-foreground/70"
+                                                        : "bg-zinc-400 dark:bg-zinc-700 opacity-40"
+                                            )}></span>
+                                            {skill.name}
                                         </li>
                                     ))}
                                 </ul>
@@ -99,7 +92,25 @@ export function Skills() {
                 })}
             </div>
 
-            {/* Legend Section removed for cleaner look as badges are self-explanatory */}
+            {/* Legend Section */}
+            <div className="mt-16 pt-8 border-t border-border/50">
+                <Reveal delay={0.4} width="100%">
+                    <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 text-sm text-muted-foreground">
+                        <div className="flex items-center gap-3">
+                            <span className="w-2.5 h-2.5 rounded-full bg-foreground shadow-[0_0_12px_rgba(255,255,255,0.7)] animate-pulse"></span>
+                            <span>Erfahren (Beste Kenntnisse)</span>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <span className="w-2 h-2 rounded-full bg-foreground/70"></span>
+                            <span>Fortgeschritten (Sicherer Umgang)</span>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <span className="w-2 h-2 rounded-full bg-zinc-400 dark:bg-zinc-700 opacity-40"></span>
+                            <span>Grundlagen (Basiswissen)</span>
+                        </div>
+                    </div>
+                </Reveal>
+            </div>
         </Section>
     );
 }
