@@ -29,10 +29,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de" className="scroll-smooth">
+    <html lang="de" className="scroll-smooth" suppressHydrationWarning>
       <body
         // flex-col + min-h-screen ensures the footer stays at the bottom even with little content
         className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased min-h-screen flex flex-col`}
+        suppressHydrationWarning
       >
         <Header />
         {children}
