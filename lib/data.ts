@@ -53,16 +53,17 @@ export const skills = {
         { name: "ASP.NET MVC", level: "intermediate" },
         { name: "Node.js", level: "intermediate" }
     ],
-    devops: [
-        { name: "Docker", level: "basic" },
-        { name: "Vercel", level: "basic" }
-    ],
     tools: [
         { name: "Git", level: "advanced" },
         { name: "VS Code", level: "advanced" },
         { name: "Visual Studio", level: "advanced" },
+        { name: "Jira", level: "basic" },
         { name: "Postman", level: "basic" }
     ],
+    devops: [
+        { name: "Docker", level: "basic" },
+        { name: "Vercel", level: "basic" }
+    ]
 };
 
 export const experience = [
