@@ -10,31 +10,31 @@ export const projects = [
     {
         title: "E-Commerce Dashboard",
         description:
-            "Ein umfassendes Admin-Dashboard zur Verwaltung von Produkten, Bestellungen und Kundenanalysen. Fokus auf Performance und Usability.",
-        tags: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma"],
+            "Moderne E-Commerce-Anwendung zur Präsentation und Verwaltung von Kunstwerken mit Fokus auf Usability und Performance.",
+        tags: ["Next.js", "TypeScript", "Tailwind CSS", "Context API", "Node.js", "FormData & File Upload API"],
         links: {
-            demo: "https://example.com",
-            github: "https://github.com/example/repo",
+            demo: "https://art-gallery-ecommerce-nine.vercel.app/",
+            github: "https://github.com/Dom5inik/art-gallery-ecommerce",
         },
     },
     {
-        title: "Task Management App",
+        title: "Local PDF Editor",
         description:
-            "Echtzeit-Kollaborations-Tool für Teams. Mit Drag & Drop Kanban-Boards und Team-Chat-Integration.",
-        tags: ["React", "Node.js", "Socket.io", "PostgreSQL"],
+            "Local PDF Editor enables users to preview, edit, annotate, reorder, and export PDF files directly in the browser — without any server-side PDF processing.",
+        tags: ["Next.js", "TypeScript", "Tailwind CSS", "PDF.js", "pdf-lib", "Lucide React"],
         links: {
-            demo: "https://example.com",
-            github: "https://github.com/example/repo",
+            demo: "https://pdf-editor-bice.vercel.app/",
+            github: "https://github.com/Dom5inik/pdf-editor/",
         },
     },
     {
-        title: "Portfolio Template",
+        title: "Weather Checker Widget",
         description:
-            "Modernes, minimalistisches Portfolio-Template für Entwickler mit Fokus auf SEO und Barrierefreiheit.",
-        tags: ["Astro", "Tailwind CSS", "Motion"],
+            "Weather Checker Widget is a small widget that allows users to check the weather in their city.",
+        tags: [".NET", "C#", "MVVM", "WebView2", "Leaflet.js", "Open-Meteo API", "RainViewer API", "BigDataCloud API"],
         links: {
-            demo: "https://example.com",
-            github: "https://github.com/example/repo",
+            demo: "/weather-demo",
+            github: "https://github.com/Dom5inik/weather-viewer",
         },
     },
 ];
